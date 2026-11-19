@@ -4,76 +4,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MY THREE PAGES</title>
+<title>Three Pages - Full Screen</title>
+
 <style>
-*{box-sizing:border-box}
-body{
- margin:0;
- background:#080e1c;
- color:white;
- font-family:Arial,sans-serif;
+* {
+  box-sizing: border-box;
 }
-header{
- padding:12px;
- text-align:center;
- background:#111c30;
- font-weight:bold;
+
+body {
+  margin: 0;
+  background: #080e1c;
+  font-family: Arial, sans-serif;
 }
-.container{
- display:grid;
- grid-template-columns:repeat(3,1fr);
- gap:5px;
- padding:5px;
+
+header {
+  background: #111c30;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 21px;
+  font-weight: bold;
 }
-.screen{
- min-width:0;
- background:white;
- border:2px solid #263750;
- border-radius:5px;
- overflow:hidden;
+
+.screen {
+  width: 100%;
+  margin: 0 0 12px;
+  background: white;
+  border-bottom: 3px solid #263750;
 }
-.screen h3{
- margin:0;
- padding:10px 3px;
- text-align:center;
- background:#17263d;
- color:white;
- font-size:13px;
+
+.screen h3 {
+  margin: 0;
+  padding: 12px;
+  text-align: center;
+  color: white;
+  background: #17263d;
 }
-iframe{
- width:100%;
- height:85vh;
- border:0;
- display:block;
- background:white;
-}
-@media(max-width:700px){
- .container{grid-template-columns:1fr}
- iframe{height:70vh}
+
+iframe {
+  display: block;
+  width: 100%;
+  height: 750px;
+  border: none;
+  background: white;
 }
 </style>
 </head>
+
 <body>
 
 <header>MY THREE PAGES</header>
 
-<div class="container">
-
 <div class="screen">
-<h3>PAGE 1</h3>
-<iframe src="https://ggfdfgfr7-hue.github.io/mmyygg/"></iframe>
-</div>
-
-<div class="screen">
-<h3>PAGE 2</h3>
-<iframe src="https://ggfdfgfr7-hue.github.io/Mmyy1/"></iframe>
+  <h3>PAGE 1</h3>
+  <iframe
+    src="https://ggfdfgfr7-hue.github.io/mmyygg/"
+    loading="eager">
+  </iframe>
 </div>
 
 <div class="screen">
-<h3>PAGE 3</h3>
-<iframe src="https://ggfdfgfr7-hue.github.io/Mmyy/"></iframe>
+  <h3>PAGE 2</h3>
+  <iframe
+    src="https://ggfdfgfr7-hue.github.io/Mmyy1/"
+    loading="eager">
+  </iframe>
 </div>
 
+<div class="screen">
+  <h3>PAGE 3</h3>
+  <iframe
+    src="https://ggfdfgfr7-hue.github.io/Mmyy/"
+    loading="eager">
+  </iframe>
 </div>
+
 </body>
 </html>

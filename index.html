@@ -4,105 +4,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Digital Traffic Hub</title>
+<title>Five Frame Dashboard</title>
 
 <style>
 * {
     box-sizing: border-box;
 }
 
-html, body {
+body {
     margin: 0;
-    padding: 0;
-    width: 100%;
-    min-height: 100%;
+    padding: 15px;
     background: #080e1c;
     font-family: Arial, sans-serif;
 }
 
-.container {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 .header {
-    background: linear-gradient(120deg, #101d35, #142c4d);
-    padding: 14px 12px;
     text-align: center;
-    border-bottom: 2px solid #2676c9;
-}
-
-.header h1 {
     color: #ffffff;
-    font-size: 22px;
-    margin: 0;
-    letter-spacing: 1px;
+    padding: 15px;
+    margin-bottom: 15px;
 }
 
-.header p {
-    color: #a9c5e5;
-    font-size: 12px;
-    margin: 6px 0 0;
+.header h2 {
+    margin: 0;
+    font-size: 24px;
 }
 
-.content {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+.frames {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+    max-width: 1400px;
+    margin: auto;
 }
 
 .frame {
-    width: 100%;
-    height: 100vh;
-    min-height: 600px;
-    margin: 0;
-    padding: 0;
+    grid-column: span 2;
+    height: 420px;
     overflow: hidden;
+    border: 2px solid #263b5d;
+    border-radius: 12px;
     background: #ffffff;
 }
 
+.frame:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.frame:nth-child(5) {
+    grid-column: 4 / span 2;
+}
+
 .frame iframe {
-    display: block;
     width: 100%;
     height: 100%;
     border: none;
-    margin: 0;
-    padding: 0;
+    display: block;
 }
 
-.footer {
-    padding: 15px;
-    text-align: center;
-    color: #8298b5;
-    font-size: 11px;
-    background: #080e1c;
+@media(max-width: 700px) {
+    .frames {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .frame,
+    .frame:nth-child(4),
+    .frame:nth-child(5) {
+        grid-column: span 1;
+        height: 350px;
+    }
+
+    .frame:last-child {
+        grid-column: 1 / -1;
+    }
+}
+
+@media(max-width: 420px) {
+    .frames {
+        grid-template-columns: 1fr;
+    }
+
+    .frame,
+    .frame:nth-child(4),
+    .frame:nth-child(5),
+    .frame:last-child {
+        grid-column: span 1;
+        height: 400px;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="header">
+    <h2>Five Independent Frames</h2>
+</div>
 
-    <div class="header">
-        <h1>DIGITAL TRAFFIC HUB</h1>
-        <p>Your Online Traffic Experience</p>
+<div class="frames">
+
+    <div class="frame">
+        <iframe src="https://ggfdfgfr7-hue.github.io/Mmyy/"></iframe>
     </div>
 
-    <div class="content">
-        <div class="frame">
-            <iframe
-                src="https://lltrco.com/?r=mahmoudyoussef20"
-                loading="eager"
-                title="Traffic Website">
-            </iframe>
-        </div>
+    <div class="frame">
+        <iframe src="https://lltrco.com/?r=mmyy11"></iframe>
     </div>
 
-    <div class="footer">
-        Digital Traffic Hub
+    <div class="frame">
+        <iframe src="https://lltrco.com/?r=mmyy2"></iframe>
+    </div>
+
+    <div class="frame">
+        <iframe src="https://lltrco.com/?r=mmyy4"></iframe>
+    </div>
+
+    <div class="frame">
+        <iframe src="https://lltrco.com/?r=mmyy5"></iframe>
     </div>
 
 </div>

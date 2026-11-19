@@ -5,45 +5,58 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Three Frames</title>
+
 <style>
 *{box-sizing:border-box}
-body{margin:0;padding:5px;background:#080e1c}
-.container{
- display:grid;
- grid-template-columns:1fr 1fr;
- gap:6px;
- align-items:start;
+
+body{
+ margin:0;
+ padding:5px;
+ background:#080e1c;
 }
+
+.container{
+ display:flex;
+ flex-direction:column;
+ gap:6px;
+}
+
 .frame{
  width:100%;
- height:200px;
+ height:225px;
  overflow:hidden;
  background:white;
 }
+
 .frame iframe{
  width:100%;
- height:200px;
+ height:225px;
  display:block;
  border:0;
 }
-.third{grid-column:1/3}
 </style>
 </head>
+
 <body>
+
 <div class="container">
 
 <div class="frame">
-<iframe src="https://ggfdfgfr7-hue.github.io/mmyygg/"></iframe>
+<iframe loading="eager"
+src="https://ggfdfgfr7-hue.github.io/mmyygg/"></iframe>
 </div>
 
 <div class="frame">
-<iframe src="https://ggfdfgfr7-hue.github.io/Mmyy1/"></iframe>
+<iframe loading="eager"
+src="https://ggfdfgfr7-hue.github.io/Mmyy1/"></iframe>
 </div>
 
-<div class="frame third">
-<iframe src="https://ggfdfgfr7-hue.github.io/Mmyy/"></iframe>
+<div class="frame">
+<iframe loading="eager"
+src="https://ggfdfgfr7-hue.github.io/Mmyy/"></iframe>
 </div>
 
 </div>
+
 </body>
 </html>
